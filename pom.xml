@@ -4,7 +4,7 @@
     <groupId>uk.ac.warwick.wsbc</groupId>
     <artifactId>pom-quimp-plugin</artifactId>
     <version>17.03.01</version>
-    <relativePath />
+    <relativePath/>
     <!-- http://stackoverflow.com/questions/6003831/parent-relativepath-points-at-my-com-mycompanymyproject-instead-of-org-apache -->
   </parent>
   <!-- Project's coordinates -->
@@ -35,8 +35,8 @@
     </license>
   </licenses>
   <scm>
-    <connection>TBP</connection>
-    <developerConnection>TBP</developerConnection>
+    <connection>scm:git:</connection>
+    <developerConnection>scm:git:</developerConnection>
     <url>TBP</url>
     <tag>HEAD</tag>
   </scm>
@@ -111,6 +111,41 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>dev-collectdeps</id>
+      <!--Default profile for building pure jar-->
+      <!--Save dependencies in separate folder-->
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>copy-dependencies</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>copy-dependencies</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+                  <overWriteReleases>false</overWriteReleases>
+                  <overWriteSnapshots>false</overWriteSnapshots>
+                  <overWriteIfNewer>true</overWriteIfNewer>
+                  <excludeTransitive>true</excludeTransitive>
+                  <includeScope>runtime</includeScope>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
   <dependencies>
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
@@ -135,6 +170,18 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HatSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>MeanSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
   <reporting>
