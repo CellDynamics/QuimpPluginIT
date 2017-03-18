@@ -79,6 +79,7 @@ public class QuimpPluginITest {
     Iterator<String> iterator = names.iterator();
     while (iterator.hasNext()) {
       String name = iterator.next();
+      LOGGER.info("Testing plugin: " + name);
       IQuimpCorePlugin pluginInstance = pf.getInstance(name);
       Method ret;
       // call all interfaces
