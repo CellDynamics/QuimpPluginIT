@@ -3,6 +3,7 @@ package uk.ac.warwick.wsbc.quimp;
 import static org.junit.Assert.fail;
 
 import java.lang.reflect.Method;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -29,17 +30,21 @@ public class QuimpPluginITest {
 
   static final Logger LOGGER = LoggerFactory.getLogger(QuimpPluginITest.class.getName());
 
+  /**
+   * Here is place where tested plugins should resist.
+   */
+  static final Path pluginsDir = Paths.get("target/dependencies");
+
   private PluginFactory pf;
 
   /**
    * Load all plugins
    * 
    * @throws Exception
-   * @see <a href="../src/test/resources/HatFilter.m">../src/test/resources/HatFilter.m</a>
    */
   @Before
   public void setUp() throws Exception {
-    pf = new PluginFactory(Paths.get("target/dependencies"));
+    pf = new PluginFactory(pluginsDir);
 
   }
 

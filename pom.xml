@@ -35,14 +35,14 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:</connection>
-    <developerConnection>scm:git:</developerConnection>
-    <url>TBP</url>
+    <connection>scm:git:https://github.com/CellDynamics/QuimpPluginIT.git</connection>
+    <developerConnection>scm:git:https://github.com/CellDynamics/QuimpPluginIT.git</developerConnection>
+    <url>https://github.com/CellDynamics/QuimpPluginIT</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>TBP</url>
+    <url>https://github.com/CellDynamics/QuimpPluginIT/issues</url>
   </issueManagement>
   <ciManagement>
     <system>None</system>
@@ -181,6 +181,18 @@
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
       <version>1.0.7</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HedgehogSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>SetHeadSnakeFilter-quimp</artifactId>
+      <version>1.0.6</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
