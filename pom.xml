@@ -147,6 +147,14 @@
       <artifactId>junit</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+    </dependency>
+    <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
       <version>1.0.7</version>
