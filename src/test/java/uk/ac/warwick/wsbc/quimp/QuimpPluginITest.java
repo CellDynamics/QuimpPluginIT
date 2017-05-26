@@ -18,6 +18,8 @@ import org.slf4j.LoggerFactory;
 
 import uk.ac.warwick.wsbc.quimp.plugin.IQuimpCorePlugin;
 import uk.ac.warwick.wsbc.quimp.plugin.ParamList;
+import uk.ac.warwick.wsbc.quimp.plugin.engine.PluginFactory;
+import uk.ac.warwick.wsbc.quimp.plugin.engine.PluginProperties;
 import uk.ac.warwick.wsbc.quimp.plugin.snakes.IQuimpBOAPoint2dFilter;
 
 /**
