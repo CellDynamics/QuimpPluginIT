@@ -100,11 +100,14 @@
         <configuration>
           <dependenciesToScan>
             <dependency>uk.ac.warwick.wsbc:SetHeadSnakeFilter-quimp</dependency>
+            <dependency>uk.ac.warwick.wsbc:HedgehogSnakeFilter-quimp</dependency>
+            <dependency>uk.ac.warwick.wsbc:MeanSnakeFilter-quimp</dependency>
+            <dependency>uk.ac.warwick.wsbc:HatSnakeFilter-quimp</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
+      <!-- Interface tester loads plugins from disk - store them first -->
       <plugin>
-        <!-- Interface tester loads plugins from disk - store them first -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -164,25 +167,7 @@
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>
     </dependency>
-    <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
-      <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
-      <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
-      <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
-      <scope>runtime</scope>
-    </dependency>
-    <!-- Jar with tests dependency -->
+
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
@@ -190,7 +175,6 @@
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
-    <!-- Regular artifact for testing interfaces -->
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
@@ -198,6 +182,52 @@
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
+
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HedgehogSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HedgehogSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>MeanSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>MeanSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HatSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>uk.ac.warwick.wsbc</groupId>
+      <artifactId>HatSnakeFilter-quimp</artifactId>
+      <version>1.0.7</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
   </dependencies>
   <reporting>
     <plugins>
