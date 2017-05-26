@@ -171,14 +171,14 @@
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -186,14 +186,14 @@
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -201,14 +201,14 @@
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -216,14 +216,14 @@
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>uk.ac.warwick.wsbc</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.7</version>
+      <version>1.0.8</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
