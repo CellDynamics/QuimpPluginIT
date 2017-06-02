@@ -1,4 +1,4 @@
-package uk.ac.warwick.wsbc.quimp;
+package com.github.celldynamics;
 
 import static org.junit.Assert.fail;
 

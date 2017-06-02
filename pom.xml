@@ -8,7 +8,7 @@
     <!-- http://stackoverflow.com/questions/6003831/parent-relativepath-points-at-my-com-mycompanymyproject-instead-of-org-apache -->
   </parent>
   <!-- Project's coordinates -->
-  <groupId>uk.ac.warwick.wsbc</groupId>
+  <groupId>com.github.celldynamics</groupId>
   <artifactId>QuimpPluginIT</artifactId>
   <packaging>jar</packaging>
   <version>1.0.0</version>
