@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.github.celldynamics</groupId>
     <artifactId>pom-quimp-plugin</artifactId>
-    <version>17.05.02-SNAPSHOT</version>
+    <version>17.06.01</version>
     <relativePath/>
     <!-- http://stackoverflow.com/questions/6003831/parent-relativepath-points-at-my-com-mycompanymyproject-instead-of-org-apache -->
   </parent>
@@ -99,10 +99,10 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>uk.ac.warwick.wsbc:SetHeadSnakeFilter-quimp</dependency>
-            <dependency>uk.ac.warwick.wsbc:HedgehogSnakeFilter-quimp</dependency>
-            <dependency>uk.ac.warwick.wsbc:MeanSnakeFilter-quimp</dependency>
-            <dependency>uk.ac.warwick.wsbc:HatSnakeFilter-quimp</dependency>
+            <dependency>com.github.celldynamics.quimp.boaplugin:SetHeadSnakeFilter-quimp</dependency>
+            <dependency>com.github.celldynamics.quimp.boaplugin:HedgehogSnakeFilter-quimp</dependency>
+            <dependency>com.github.celldynamics.quimp.boaplugin:MeanSnakeFilter-quimp</dependency>
+            <dependency>com.github.celldynamics.quimp.boaplugin:HatSnakeFilter-quimp</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -169,61 +169,61 @@
     </dependency>
 
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
 
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
 
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
 
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>uk.ac.warwick.wsbc</groupId>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.9</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>

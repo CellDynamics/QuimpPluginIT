@@ -16,11 +16,11 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.ac.warwick.wsbc.quimp.plugin.IQuimpCorePlugin;
-import uk.ac.warwick.wsbc.quimp.plugin.ParamList;
-import uk.ac.warwick.wsbc.quimp.plugin.engine.PluginFactory;
-import uk.ac.warwick.wsbc.quimp.plugin.engine.PluginProperties;
-import uk.ac.warwick.wsbc.quimp.plugin.snakes.IQuimpBOAPoint2dFilter;
+import com.github.celldynamics.quimp.plugin.IQuimpCorePlugin;
+import com.github.celldynamics.quimp.plugin.ParamList;
+import com.github.celldynamics.quimp.plugin.engine.PluginFactory;
+import com.github.celldynamics.quimp.plugin.engine.PluginProperties;
+import com.github.celldynamics.quimp.plugin.snakes.IQuimpBOAPoint2dFilter;
 
 /**
  * Test class for HatFilter.
