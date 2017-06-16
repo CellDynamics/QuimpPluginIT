@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.github.celldynamics</groupId>
     <artifactId>pom-quimp-plugin</artifactId>
-    <version>17.06.01</version>
+    <version>17.06.02</version>
     <relativePath/>
     <!-- http://stackoverflow.com/questions/6003831/parent-relativepath-points-at-my-com-mycompanymyproject-instead-of-org-apache -->
   </parent>
@@ -103,6 +103,7 @@
             <dependency>com.github.celldynamics.quimp.boaplugin:HedgehogSnakeFilter-quimp</dependency>
             <dependency>com.github.celldynamics.quimp.boaplugin:MeanSnakeFilter-quimp</dependency>
             <dependency>com.github.celldynamics.quimp.boaplugin:HatSnakeFilter-quimp</dependency>
+            <dependency>com.github.celldynamics.quimp.boaplugin:RandomWalkSnakeFilter-quimp</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -160,25 +161,33 @@
       <artifactId>mockito-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest-library</artifactId>
+      <groupId>com.github.baniuk</groupId>
+      <artifactId>ImageJTestSuite</artifactId>
+      <version>1.0.0</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>SetHeadSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -186,14 +195,14 @@
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HedgehogSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -201,14 +210,14 @@
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>MeanSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -216,14 +225,29 @@
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>HatSnakeFilter-quimp</artifactId>
-      <version>1.0.9</version>
+      <version>1.0.10</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
+      <artifactId>RandomWalkSnakeFilter-quimp</artifactId>
+      <version>1.0.0</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
+      <artifactId>RandomWalkSnakeFilter-quimp</artifactId>
+      <version>1.0.0</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>

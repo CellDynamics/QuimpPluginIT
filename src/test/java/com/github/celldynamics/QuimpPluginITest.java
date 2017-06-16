@@ -16,11 +16,16 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.celldynamics.quimp.Snake;
 import com.github.celldynamics.quimp.plugin.IQuimpCorePlugin;
+import com.github.celldynamics.quimp.plugin.IQuimpPluginAttachImage;
 import com.github.celldynamics.quimp.plugin.ParamList;
 import com.github.celldynamics.quimp.plugin.engine.PluginFactory;
 import com.github.celldynamics.quimp.plugin.engine.PluginProperties;
 import com.github.celldynamics.quimp.plugin.snakes.IQuimpBOAPoint2dFilter;
+import com.github.celldynamics.quimp.plugin.snakes.IQuimpBOASnakeFilter;
+
+import ij.process.ImageProcessor;
 
 /**
  * Test class for HatFilter.
@@ -116,6 +121,24 @@ public class QuimpPluginITest {
           ret = pluginInstance.getClass().getDeclaredMethod("runPlugin", new Class<?>[] {});
           if (ret.getReturnType() != List.class) {
             fail("Bad return type for runPlugin()");
+          }
+        }
+        if (pluginInstance instanceof IQuimpBOASnakeFilter) {
+          ret = pluginInstance.getClass().getDeclaredMethod("attachData",
+                  new Class<?>[] { Snake.class });
+          if (ret.getReturnType() != void.class) {
+            fail("Bad return type for attachData()");
+          }
+          ret = pluginInstance.getClass().getDeclaredMethod("runPlugin", new Class<?>[] {});
+          if (ret.getReturnType() != Snake.class) {
+            fail("Bad return type for runPlugin()");
+          }
+        }
+        if (pluginInstance instanceof IQuimpPluginAttachImage) {
+          ret = pluginInstance.getClass().getDeclaredMethod("attachImage",
+                  new Class<?>[] { ImageProcessor.class });
+          if (ret.getReturnType() != void.class) {
+            fail("Bad return type for attachData()");
           }
         }
 
