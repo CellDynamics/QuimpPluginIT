@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.github.celldynamics</groupId>
     <artifactId>pom-quimp-plugin</artifactId>
-    <version>17.06.02</version>
+    <version>17.10.02</version>
     <relativePath/>
     <!-- http://stackoverflow.com/questions/6003831/parent-relativepath-points-at-my-com-mycompanymyproject-instead-of-org-apache -->
   </parent>
@@ -163,7 +163,7 @@
     <dependency>
       <groupId>com.github.baniuk</groupId>
       <artifactId>ImageJTestSuite</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.2</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -240,14 +240,14 @@
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>RandomWalkSnakeFilter-quimp</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.2</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.celldynamics.quimp.boaplugin</groupId>
       <artifactId>RandomWalkSnakeFilter-quimp</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.2</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
